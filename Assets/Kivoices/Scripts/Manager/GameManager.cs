@@ -9,8 +9,8 @@ namespace Kivoices.Scripts.Manager
         [Header("Question Pack")]
         [SerializeField] private QuestionPackSO _selectedQuestionPack;
 
-        [Header("Player Data")]
-        [SerializeField] private int _playerHealth;
+        [Header("Data")]
+        [SerializeField] private PlayerDataSO _playerData;
         [SerializeField] private int _playerScore;
 
         [Header("Game Settings")]
@@ -27,7 +27,7 @@ namespace Kivoices.Scripts.Manager
 
         private void Initialize()
         {
-            _currentHealth = _playerHealth;
+            _currentHealth = _playerData.GetInitialPlayerHealth();
             _playerScore = 0;
             _selectedQuestionPack.Initialize();
             GetNextQuestion();
@@ -56,6 +56,7 @@ namespace Kivoices.Scripts.Manager
             else
             {
                 _currentHealth--;
+                GameEventManager.OnAnswerWrongEvent?.Invoke(_currentHealth);
 
                 if (_currentHealth <= 0)
                 {

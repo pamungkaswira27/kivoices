@@ -8,6 +8,7 @@ namespace Kivoices.Scripts.Manager
     {
         public static Action<QuestionSO, Action<bool>> OnGetQuestionEvent;
         public static Action<int> OnAnswerCorrectEvent;
+        public static Action<int> OnAnswerWrongEvent;
         public static Action<bool, int> OnGameEndEvent;
     }
 }

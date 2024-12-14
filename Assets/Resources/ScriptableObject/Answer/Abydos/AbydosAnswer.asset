@@ -18,18 +18,24 @@ MonoBehaviour:
     IsCorrect: 0
   - Id: Ayane_Swimsuit
     Text: Ayane (Swimsuit)
+    IsCorrect: 1
+  - Id: Hoshino
+    Text: Hoshino
     IsCorrect: 0
   - Id: Hoshino_Battle
     Text: Hoshino (Battle)
     IsCorrect: 0
-  - Id: Hoshino
-    Text: Hoshino
+  - Id: Hoshino_Swimsuit
+    Text: Hoshino (Swimsuit)
+    IsCorrect: 0
+  - Id: Nonomi
+    Text: Nonomi
     IsCorrect: 0
   - Id: Nonomi_Swimsuit
     Text: Nonomi (Swimsuit)
     IsCorrect: 0
-  - Id: Nonomi
-    Text: Nonomi
+  - Id: Serika
+    Text: Serika
     IsCorrect: 0
   - Id: Serika_NewYear
     Text: Serika (New Year)
@@ -37,17 +43,14 @@ MonoBehaviour:
   - Id: Serika_Swimsuit
     Text: Serika (Swimsuit)
     IsCorrect: 0
-  - Id: Serika
-    Text: Serika
+  - Id: Shiroko
+    Text: Shiroko
     IsCorrect: 0
   - Id: Shiroko_Riding
     Text: Shiroko (Riding)
-    IsCorrect: 0
+    IsCorrect: 1
   - Id: Shiroko_Swimsuit
     Text: Shiroko (Swimsuit)
-    IsCorrect: 0
-  - Id: Shiroko
-    Text: Shiroko
     IsCorrect: 0
   - Id: ShirokoTerror
     Text: Shiroko Terror

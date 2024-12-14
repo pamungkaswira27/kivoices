@@ -14,18 +14,29 @@ namespace Kivoices.Scripts.ScriptableObjects
 
         public List<Answer> GetRandomizeAnswer(string answerId)
         {
+            List<Answer> tempAnswer = new List<Answer>();
+
+            foreach (Answer answer in _answerList)
+            {
+                tempAnswer.Add(answer);
+            }
+            
             List<Answer> randomAnswers = new List<Answer>();
 
             // Get correct answer
-            Answer correctAnswer = _answerList.Find((answer) => answer.Id == answerId);
+            Answer correctAnswer = tempAnswer.Find((answer) => answer.Id.ToLower().Trim().Equals(answerId.ToLower().Trim()));
             correctAnswer.IsCorrect = true;
             randomAnswers.Add(correctAnswer);
+            tempAnswer.Remove(correctAnswer);
 
             // Get random incorrect answers
-            for (int i = 0; i < _maxAnswerCount; i++)
+            for (int i = 0; i < _maxAnswerCount - 1; i++)
             {
-                Answer randomAnswer = _answerList.Find((answer) => answer.Id != answerId);
+                int randomIndex = Random.Range(0, tempAnswer.Count);
+                Answer randomAnswer = tempAnswer[randomIndex];
+                randomAnswer.IsCorrect = false;
                 randomAnswers.Add(randomAnswer);
+                tempAnswer.RemoveAt(randomIndex);
             }
 
             // Randomize answers

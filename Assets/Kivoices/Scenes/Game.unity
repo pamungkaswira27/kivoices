@@ -2179,6 +2179,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _selectedQuestionPack: {fileID: 11400000, guid: 923aaca4491f594438d642d2c8bee3fd, type: 2}
+  _playerHealth: 5
+  _playerScore: 0
+  _scorePerQuestion: 100
 --- !u!1 &1925240164
 GameObject:
   m_ObjectHideFlags: 0

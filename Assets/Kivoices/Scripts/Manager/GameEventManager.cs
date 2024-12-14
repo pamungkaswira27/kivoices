@@ -7,6 +7,6 @@ namespace Kivoices.Scripts.Manager
     public class GameEventManager : MonoBehaviour
     {
         public static Action<QuestionSO, Action<bool>> OnGetQuestionEvent;
-        public static Action OnGameEndEvent;
+        public static Action<bool, int> OnGameEndEvent;
     }
 }

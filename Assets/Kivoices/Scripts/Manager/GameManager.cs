@@ -9,7 +9,16 @@ namespace Kivoices.Scripts.Manager
         [Header("Question Pack")]
         [SerializeField] private QuestionPackSO _selectedQuestionPack;
 
+        [Header("Player Data")]
+        [SerializeField] private int _playerHealth;
+        [SerializeField] private int _playerScore;
+
+        [Header("Game Settings")]
+        [SerializeField] private int _scorePerQuestion;
+
         private QuestionSO _currentQuestion;
+
+        private int _currentHealth;
 
         private void Start()
         {
@@ -18,6 +27,8 @@ namespace Kivoices.Scripts.Manager
 
         private void Initialize()
         {
+            _currentHealth = _playerHealth;
+            _playerScore = 0;
             _selectedQuestionPack.Initialize();
             GetNextQuestion();
         }
@@ -28,8 +39,7 @@ namespace Kivoices.Scripts.Manager
 
             if (_currentQuestion == null)
             {
-                Debug.Log("Game end");
-                GameEventManager.OnGameEndEvent?.Invoke();
+                GameEventManager.OnGameEndEvent?.Invoke(true, _playerScore);
                 return;
             }
 
@@ -40,11 +50,18 @@ namespace Kivoices.Scripts.Manager
         {
             if (isCorrect)
             {
-                Debug.Log("Answer is correct");
+                _playerScore += _scorePerQuestion;
             }
             else
             {
-                Debug.Log("Answer is incorrect");
+                _currentHealth--;
+
+                if (_currentHealth <= 0)
+                {
+                    _currentHealth = 0;
+                    GameEventManager.OnGameEndEvent?.Invoke(false, 0);
+                    return;
+                }
             }
 
             AudioManager.Instance.StopSound();

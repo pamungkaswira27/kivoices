@@ -47,6 +47,7 @@ namespace Kivoices.Scripts.Manager
                 Debug.Log("Answer is incorrect");
             }
 
+            AudioManager.Instance.StopSound();
             GetNextQuestion();
         }
     }

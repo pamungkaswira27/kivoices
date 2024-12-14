@@ -10,6 +10,7 @@ namespace Kivoices.Scripts.UI
     {
         [Header("UI Components")]
         [SerializeField] private TextMeshProUGUI _voiceTranscriptionText;
+        [SerializeField] private VoiceButton _voiceButton;
         [SerializeField] private AnswerButton[] _answerButtons;
 
         private void OnEnable()
@@ -25,6 +26,8 @@ namespace Kivoices.Scripts.UI
         private void SetupGameUI(QuestionSO question, Action<bool> answerButtonCallback)
         {
             _voiceTranscriptionText.text = $"{question.GetVoiceTranscript()}";
+            _voiceButton.SetupVoiceButton(question.GetVoiceClip());
+            _voiceButton.PlayVoice();
 
             for (int i = 0; i < question.Answers.Count; i++)
             {

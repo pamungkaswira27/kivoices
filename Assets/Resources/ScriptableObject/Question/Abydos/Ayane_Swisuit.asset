@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1657af3f86a8c564fb2d4498b941ae61, type: 3}
+  m_Name: Ayane_Swisuit
+  m_EditorClassIdentifier: 
+  _id: Ayane_Swimsuit
+  _voiceClip: {fileID: 8300000, guid: 87514d696c97c5f43b2eb028278d9593, type: 3}
+  _voiceTranscript: Welcome, Sensei!
+  _answer: {fileID: 11400000, guid: f8a0871c39822d44fbe2f1afe4ac9cfc, type: 2}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1657af3f86a8c564fb2d4498b941ae61, type: 3}
+  m_Name: Serika_NewYear
+  m_EditorClassIdentifier: 
+  _id: Serika_NewYear
+  _voiceClip: {fileID: 8300000, guid: a5693dfe8754de148a2f211984787d41, type: 3}
+  _voiceTranscript: 'Hey, Sensei. Let''s get to work.
+
+    I''ve been waiting to
+    help out.'
+  _answer: {fileID: 11400000, guid: f8a0871c39822d44fbe2f1afe4ac9cfc, type: 2}

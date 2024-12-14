@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81d79f9de616b64da0aa09bb691c070, type: 3}
+  m_Name: AbydosAnswer
+  m_EditorClassIdentifier: 
+  _answerList:
+  - Id: Ayane
+    Text: Ayane
+    IsCorrect: 0
+  - Id: Ayane_Swimsuit
+    Text: Ayane (Swimsuit)
+    IsCorrect: 0
+  - Id: Hoshino_Battle
+    Text: Hoshino (Battle)
+    IsCorrect: 0
+  - Id: Hoshino
+    Text: Hoshino
+    IsCorrect: 0
+  - Id: Nonomi_Swimsuit
+    Text: Nonomi (Swimsuit)
+    IsCorrect: 0
+  - Id: Nonomi
+    Text: Nonomi
+    IsCorrect: 0
+  - Id: Serika_NewYear
+    Text: Serika (New Year)
+    IsCorrect: 0
+  - Id: Serika_Swimsuit
+    Text: Serika (Swimsuit)
+    IsCorrect: 0
+  - Id: Serika
+    Text: Serika
+    IsCorrect: 0
+  - Id: Shiroko_Riding
+    Text: Shiroko (Riding)
+    IsCorrect: 0
+  - Id: Shiroko_Swimsuit
+    Text: Shiroko (Swimsuit)
+    IsCorrect: 0
+  - Id: Shiroko
+    Text: Shiroko
+    IsCorrect: 0
+  - Id: ShirokoTerror
+    Text: Shiroko Terror
+    IsCorrect: 0
+  _maxAnswerCount: 4

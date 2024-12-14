@@ -51,6 +51,7 @@ namespace Kivoices.Scripts.Manager
             if (isCorrect)
             {
                 _playerScore += _scorePerQuestion;
+                GameEventManager.OnAnswerCorrectEvent?.Invoke(_playerScore);
             }
             else
             {

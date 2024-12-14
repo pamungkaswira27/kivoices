@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ce16bfbfe51054e9259fcae9a5ce7e, type: 3}
+  m_Name: AbydosPack
+  m_EditorClassIdentifier: 
+  _questions:
+  - {fileID: 11400000, guid: c2fa06176c44d8e42833fbf263d74f48, type: 2}
+  - {fileID: 11400000, guid: 6c15d7698ab93ee4a9ca592bb63aa91c, type: 2}
+  - {fileID: 11400000, guid: 8b3deefae1113eb4391c2cd35394c727, type: 2}
+  - {fileID: 11400000, guid: 64a32133fb89e664988d8280926a3104, type: 2}
+  - {fileID: 11400000, guid: 70c80c4d9953a0c498f54ff6d0981ab6, type: 2}
+  - {fileID: 11400000, guid: e0ab935fb552965419054882764caced, type: 2}
+  - {fileID: 11400000, guid: 617b8a53fc6c11c4ea459962556ec394, type: 2}
+  - {fileID: 11400000, guid: fd2305f65caba544da3ff0238ee006ee, type: 2}
+  - {fileID: 11400000, guid: eb9142d5fa7d73947b29aa6c1d604fd6, type: 2}
+  - {fileID: 11400000, guid: 0e5c6a800f95c724c870b01675a9cc64, type: 2}
+  - {fileID: 11400000, guid: 64c3b80a9f0e0ab4d8048956a3fa2f8a, type: 2}
+  - {fileID: 11400000, guid: 2ab83251838cfcf45a7f9bc385f916df, type: 2}
+  - {fileID: 11400000, guid: 142f03f97c3c2f549802b739d2ac6848, type: 2}
+  - {fileID: 11400000, guid: 17501e2cd131efb41b2f236f3e8cbe0c, type: 2}
